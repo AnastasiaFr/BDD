@@ -8,8 +8,7 @@ import org.junit.runner.RunWith;
         plugin = { "pretty", "html:target/cucumber-reports",
                 "json:target/cucumber.json",
                 "junit:target/cucumber.xml",
-        "testng:target/cucumber_testng.xml"}
+                "testng:target/cucumber_testng.xml"}
 )
-
 public class CucumberTest {
 }
