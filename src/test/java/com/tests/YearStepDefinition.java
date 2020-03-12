@@ -26,7 +26,7 @@ public class YearStepDefinition {
             this.year = Integer.parseInt(year);
         }
         catch (NumberFormatException exp){
-
+            this.year = 0;
         }
     }
 
