@@ -21,8 +21,13 @@ public class YearStepDefinition {
     int year;
 
     @Given("Пользователь вводит год {string}")
-    public void year_is(String year) throws NumberFormatException {
-        this.year = Integer.parseInt(year);
+    public void year_is(String year)  {
+        try {
+            this.year = Integer.parseInt(year);
+        }
+        catch (NumberFormatException exp){
+
+        }
     }
 
     @When("Мы определяем високосность года")
